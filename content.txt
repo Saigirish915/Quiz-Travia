@@ -1,0 +1,55 @@
+1. Dictionaries
+Used to store questions and their corresponding answers.
+
+python
+Copy
+Edit
+questions = {
+    "What is...": "def",
+    ...
+}
+2. Functions
+Used to modularize logic (e.g., check_answer(), load_question(), finish_quiz()).
+
+3. Conditional Statements
+Used to check if user input is correct and control program flow.
+
+python
+Copy
+Edit
+if user_ans == correct_ans:
+4. Loops
+for loop (indirectly via enumerate) and loop control with current_question to load one question at a time.
+
+5. Random Module
+random.sample() is used to select 5 random questions from the dictionary.
+
+6. File Handling
+Read/write the high score using:
+
+python
+Copy
+Edit
+with open("highscore.txt", "r/w") as f:
+7. String Methods
+lower(), strip() are used to normalize user input for accurate comparison.
+
+8. Exception Handling
+try-except is used to handle file reading errors for the high score file.
+
+9. Tkinter (GUI Module)
+GUI components like Label, Entry, Button
+
+pack() layout manager
+
+messagebox for pop-up alerts
+
+mainloop() for the GUI event loop
+
+10. Global Variables
+Used to maintain state across multiple function calls (score, current_question).
+
+11. Program Structure
+Clear separation between logic and UI
+
+Organized into reusable functions
